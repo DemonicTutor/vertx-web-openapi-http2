@@ -1,0 +1,37 @@
+openapi: 3.0.0
+info:
+  version: 1.0.0
+  title: sample
+  description: sample
+  termsOfService: "sample"
+  contact:
+    name: markus
+tags:
+  - name: sample
+    description: sample
+servers:
+  - url: /v1/api
+paths:
+  /sample:
+    get:
+      security:
+        - apiKey: []
+      description: sample
+      tags:
+        - sample
+      operationId: sample
+      requestBody:
+        content:
+          application/json:
+            schema:
+              type: string
+              description: sample
+        description: sample
+      responses:
+        "200":
+          description: sample
+          content:
+            application/json:
+              schema:
+                type: string
+                description: sample
